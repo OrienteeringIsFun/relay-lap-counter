@@ -57,11 +57,22 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1">
-            <TextView
-                android:id="@+id/logText"
+            <LinearLayout
+                android:id="@+id/reviewContainer"
+                android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
         </ScrollView>
+        <Button
+            android:id="@+id/analyzeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Auswertung"/>
+        <Button
+            android:id="@+id/exportButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exportieren"/>
         <Button
             android:id="@+id/restartButton"
             android:layout_width="match_parent"
