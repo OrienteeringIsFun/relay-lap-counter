@@ -9,11 +9,11 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <EditText
-            android:id="@+id/inputNumbers"
+        <LinearLayout
+            android:id="@+id/startNumbersContainer"
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Enter numbers separated by commas"/>
+            android:layout_height="wrap_content" />
         <Button
             android:id="@+id/startButton"
             android:layout_width="match_parent"
@@ -34,12 +34,12 @@
             android:layout_height="wrap_content"
             android:textSize="24sp"
             android:gravity="center"/>
-        <LinearLayout
+        <androidx.gridlayout.widget.GridLayout
             android:id="@+id/buttonContainer"
-            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:columnCount="1"/>
         <Button
             android:id="@+id/endButton"
             android:layout_width="match_parent"
